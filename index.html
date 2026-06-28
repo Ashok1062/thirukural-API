@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirukkural</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./thiruvalluvar.png" alt="thiruvalluvar" class="thiru">
+        <div class="card">
+            <div class="search">
+                <input type="text" id="input">
+                <button onclick="apiCall()">search</button>
+            </div>
+            <h1>திருக்குறள்</h1>
+            <h3 class="num">குறள் எண் :- <span id="num"> 1 </span></h3>
+            <div class="kural">
+                <h2 id="l1">அகர முதல எழுத்தெல்லாம் ஆதி</h2>
+                <h2 id="l2">பகவன் முதற்றே உலகு.</h2>
+            </div>
+            <h3 class="porul">பொருள் :-</h3>
+            <p id="mean">எழுத்துக்கள் எல்லாம் அகரத்தில் தொடங்குகின்றன; (அது போல) உலகம் கடவுளில் தொடங்குகிறது.</p>
+            <button class="gendrat" onclick="apiCall()">குறள் உருவகம்</button>
+        </div>
+        <img src="https://png.pngtree.com/background/20210714/original/pngtree-red-cloth-material-background-image-material-picture-image_1216434.jpg" alt="screen" class="screen1" id="scr1">
+        <img src="https://png.pngtree.com/background/20210714/original/pngtree-red-cloth-material-background-image-material-picture-image_1216434.jpg" alt="screen" class="screen2" id="scr2">
+        <button onclick="start()" class="start" id="str" >திறக்க</button>
+        <h1 id="hand">திருக்குறள்</h1>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

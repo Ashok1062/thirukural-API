@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(105, 5, 5),brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    contain: paint;
+    padding: 20px;
+}
+.thiru{
+    width: 450px;
+}
+.card{
+    width: 750px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: white;
+    
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+.card h1{
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 0 0 8px;
+}
+.num{
+    color: black;
+    font-weight: 900;
+}
+.porul{
+    color: black;
+    font-weight: 900;
+}
+.gendrat{
+    padding: 8px 12px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+.gendrat:active{
+    transform: scale(0.90);
+}
+.kural{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0px 30px;
+    line-height: 40px;
+}
+#mean{
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+/* search button */
+
+.search{
+    display: flex;
+    height: 35px;
+    position: absolute;
+    right: 30px;
+}
+.search input{
+    border:none;
+    outline: none;
+    width: 70px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.search button{
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(rgb(105, 5, 5),brown);
+    color: whitesmoke;
+    border-radius: 0 10px 10px 0;
+}
+.search button:hover{
+        background-image: linear-gradient(brown,rgb(105, 5, 5));
+}
+.search button:active{
+    transform: scale(0.92);
+}
+.screen1{
+    position: absolute;
+    width: 50%;
+    min-height: 100vh;
+    left: 0;
+}
+.screen2{
+    position: absolute;
+    width: 50%;
+    min-height: 100vh;
+    right: 0;
+}
+.start{
+    z-index: 1;
+    position: absolute;
+    right: 180px;
+    bottom: 70px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    font-size: 20px;
+    color: yellow;
+    text-shadow: 0 0 4px whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 5px inset red;
+}
+.start:active{
+    transform: scale(0.90);
+}
+#hand{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    color: whitesmoke;
+    text-shadow: 0 0 10px red;
+}
+
+@keyframes scr1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-700px);
+    }
+}
+@keyframes scr2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(700px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .thiru{
+        width: 300px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .card{
+    width: 550px;
+    }
+    .search{
+        top: -50px;
+}
+    .kural{
+        font-size: 10px;
+    }
+    #mean{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+    .card h1{
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width:850px) {
+    .container{
+        flex-direction: column;
+        height: unset;
+        min-height: 100vh;
+        gap: 20px;
+    }
+    .search{
+        right: 0px;
+    }
+    #hand{
+        font-size: 70px;
+    }
+    .screen1{
+        min-height: 800px;
+    }
+    .screen2{
+        min-height: 800px;
+    }
+}
+@media screen and (max-width:850px){
+    .card{
+    width: 100%;
+    }
+    .thiru{
+        width: 300px;
+        height: 250px;
+    }
+    .search{
+        top: -275px;
+        height: 30px;
+    }
+    .search input{
+    width: 60px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.search button{
+    font-size: 13px;
+}
+}
+@media screen and (max-width:850px){
+    .card h1{
+        font-size: 22px;
+    }
+    .num,.porul{
+        font-size: 16px;
+    }
+    .kural{
+        font-size: 10px;
+    }
+    #mean{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 579px) {
+    .kural {
+        font-size: 9px;
+        padding: 0;
+         line-height: 26px;
+    }
+    #mean{
+        font-size: 10px;
+         line-height: 16px;
+    }
+    .card h1{
+        font-size: 19px;
+    }
+    .num,.porul{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:500px) {
+    .kural {
+        font-size: 7px;
+    }
+    #mean{
+        font-size: 9px;
+    }
+    .card h1{
+        font-size: 14px;
+    }
+    .num,.porul{
+        font-size: 10px;
+    }
+    .gendrat{
+    padding: 4px 6px;
+    font-size: 10px;
+    }
+    #hand{
+        font-size: 30px;
+    }
+    .start{
+        bottom: 130px;
+    }
+}
+@media screen and (max-width:425px){
+    .start{
+        right: 150px;
+        bottom: 170px;
+    }
+}
+@media screen and (max-width:400px) {
+    .kural {
+        font-size: 5px;
+        line-height: 16px;
+    }
+    #mean{
+        font-size: 7px;
+       
+    }
+    .card h1{
+        font-size: 12px;
+    }
+    .num,.porul{
+        font-size: 9px;
+    }
+    .gendrat{
+    padding: 4px 8px;
+    font-size: 9px;
+    margin-top: 10px ;
+    }
+    .search{
+        height: 20px;
+    }
+    .search input{
+    width: 50px;
+    font-size: 10px;
+    font-weight: 600;
+    }
+    .search button{
+    font-size: 13px;
+    }
+    .start{
+        right: 100px;
+    }
+}
+@media screen and (max-width:375px){
+    .start{
+        right: 130px;
+    }
+}
