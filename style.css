@@ -297,18 +297,18 @@ border: 1px solid rgba(255, 255, 255, 0.08);
 }
 @media screen and (max-width:400px) {
     .kural {
-        font-size: 5px;
-        line-height: 16px;
+        font-size: 6px;
+        line-height: 22px;
     }
     #mean{
-        font-size: 7px;
+        font-size: 9px;
        
     }
     .card h1{
         font-size: 12px;
     }
     .num,.porul{
-        font-size: 9px;
+        font-size: 12px;
     }
     .gendrat{
     padding: 4px 8px;
@@ -317,6 +317,7 @@ border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .search{
         height: 20px;
+        top: -230px;
     }
     .search input{
     width: 50px;
@@ -328,6 +329,10 @@ border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .start{
         right: 100px;
+    }
+    .thiru{
+        width: 180px;
+        height: 200px;
     }
 }
 @media screen and (max-width:375px){
